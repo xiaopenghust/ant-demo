@@ -1,0 +1,68 @@
+@import "variable";
+
+@media (min-device-width: 320px) and (max-device-width: 374px) and (max-aspect-ratio: 9/10) {
+    html, body {
+        font-size: 10px;
+        background-color: #1e9f76;
+    }
+}
+
+@media (min-device-width: 375px) and (max-device-width: 413px) and (max-aspect-ratio: 9/10) {
+    html, body {
+        font-size: 12px;
+        background-color: #1e9f76;
+    }
+}
+
+@media (min-device-width: 414px) and (max-device-width: 500px) and (max-aspect-ratio: 9/10) {
+    html, body {
+        font-size: 13.25px;
+        background-color: #1e9f76;
+    }
+}
+
+@media (min-device-width: 500px) and (max-aspect-ratio: 9/10) {
+    html, body {
+        font-size: 14px;
+        background-color: #1e9f76;
+    }
+}
+
+
+
+.opacity_0{
+    opacity : 0;
+}
+
+footer{
+    height: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top:1px solid #f4f4f4;
+    font-size: 16px;
+    z-index: 10
+}
+
+footer a{
+    text-align: center;
+    display: block;
+    flex:1;
+    color: #333;
+    border-right: 1px solid #f4f4f4;
+}
+
+.input-group .date{
+    width:100%;
+}
+
+
+
