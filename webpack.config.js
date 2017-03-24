@@ -67,6 +67,13 @@ const config = {
     plugins: [
         new webpack.LoaderOptionsPlugin({
             options: {
+                bable:{
+                    presets: ["es2015", "react"],
+                    plugins:['transform-runtime',['babel-plugin-import',{
+                        "libraryName": "antd",
+                        "style": true,   // or 'css'
+                    }]]
+                },
                 postcss: function () {
                     return [require('precss'), require('autoprefixer')({
                         broswers:['last 5 versions']
