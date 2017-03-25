@@ -39,18 +39,8 @@ class HomeComponent extends React.Component {
                 <TabBar.Item
                     title="生活"
                     key="生活"
-                    icon={<div style={{
-                        width: '0.44rem',
-                        height: '0.44rem',
-                        background: 'url(https://zos.alipayobjects.com/rmsportal/sifuoDUQdAFKAVcFGROC.svg) center center /  0.42rem 0.42rem no-repeat' }}
-                    />
-                    }
-                    selectedIcon={<div style={{
-                        width: '0.44rem',
-                        height: '0.44rem',
-                        background: 'url(https://zos.alipayobjects.com/rmsportal/iSrlOTqrKddqbOmlvUfq.svg) center center /  0.42rem 0.42rem no-repeat' }}
-                    />
-                    }
+                    icon={{ uri: 'https://zos.alipayobjects.com/rmsportal/asJMfBrNqpMMlVpeInPQ.svg' }}
+                    selectedIcon={{ uri: 'https://zos.alipayobjects.com/rmsportal/gjpzzcrPMkhfEqgbYvmN.svg' }}
                     selected={this.state.selectedTab === 'blueTab'}
                     badge={1}
                     onPress={() => {
@@ -63,8 +53,8 @@ class HomeComponent extends React.Component {
                     {this.renderContent('生活')}
                 </TabBar.Item>
                 <TabBar.Item
-                    icon={<Icon type="koubei-o" size="md" />}
-                    selectedIcon={<Icon type="koubei" size="md" />}
+                    icon={{ uri: 'https://zos.alipayobjects.com/rmsportal/asJMfBrNqpMMlVpeInPQ.svg' }}
+                    selectedIcon={{ uri: 'https://zos.alipayobjects.com/rmsportal/gjpzzcrPMkhfEqgbYvmN.svg' }}
                     title="口碑"
                     key="口碑"
                     badge={'new'}
@@ -79,20 +69,8 @@ class HomeComponent extends React.Component {
                     {this.renderContent('口碑')}
                 </TabBar.Item>
                 <TabBar.Item
-                    icon={
-                        <div style={{
-                            width: '0.1rem',
-                            height: '0.1rem',
-                            background: 'url(https://zos.alipayobjects.com/rmsportal/psUFoAMjkCcjqtUCNPxB.svg) center center /  0.1rem 0.1rem no-repeat' }}
-                        />
-                    }
-                    selectedIcon={
-                        <div style={{
-                            width: '0.1rem',
-                            height: '0.1rem',
-                            background: 'url(https://zos.alipayobjects.com/rmsportal/IIRLrXXrFAhXVdhMWgUI.svg) center center /  0.1rem 0.1rem no-repeat' }}
-                        />
-                    }
+                    icon={{ uri: 'https://zos.alipayobjects.com/rmsportal/asJMfBrNqpMMlVpeInPQ.svg' }}
+                    selectedIcon={{ uri: 'https://zos.alipayobjects.com/rmsportal/gjpzzcrPMkhfEqgbYvmN.svg' }}
                     title="朋友"
                     key="朋友"
                     dot
