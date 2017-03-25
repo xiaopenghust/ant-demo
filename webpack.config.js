@@ -20,11 +20,20 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.jsx?/,
+                test: /\.jsx?$/,
                 include: APP_DIR,
+                exclude: /node_modules/,
                 loader: 'babel-loader',
                 options: {
-                    presets: ["es2015", "react"]
+                    presets: ['es2015', 'react'],
+                    plugins: [
+                        ["babel-plugin-transform-runtime", { polyfill: false }],
+                        ["transform-runtime", { polyfill: false }],
+                        ["import", [
+                            { "style": "css", "libraryName": "antd" },
+                            { "style": "css", "libraryName": "antd-mobile" }
+                        ]]
+                    ]
                 }
             },
             {
@@ -63,6 +72,10 @@ const config = {
                 }
             }
         ]
+    },
+    resolve: {
+        modules: ['node_modules', path.join(__dirname, '../node_modules')],
+        extensions: ['.web.tsx', '.web.ts', '.web.jsx', '.web.js', '.ts', '.tsx', '.js', '.jsx', '.json'],
     },
     plugins: [
         new webpack.LoaderOptionsPlugin({
